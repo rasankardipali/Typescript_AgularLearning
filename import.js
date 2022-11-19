@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var expor_1 = require("./expor");
+var obj = new expor_1.Calculator();
+console.log("Addtion=");
+obj.add(30, 40);
+console.log("Substraction=");
+obj.sub(50, 40);
+console.log("Maltiplication=");
+obj.mal(30, 40);
+console.log("Division=");
+obj.div(30, 40);

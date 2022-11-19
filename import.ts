@@ -1,0 +1,10 @@
+import { Calculator } from "./expor";
+var obj=new Calculator();
+console.log("Addtion=");
+obj.add(30,40);
+console.log("Substraction=");
+obj.sub(50,40);
+console.log("Maltiplication=");
+obj.mal(30,40);
+console.log("Division=");
+obj.div(30,40);
