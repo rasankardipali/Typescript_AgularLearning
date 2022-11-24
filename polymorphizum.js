@@ -23,40 +23,37 @@ var Organizer = /** @class */ (function () {
 }());
 var event1 = /** @class */ (function (_super) {
     __extends(event1, _super);
-    function event1(id, name, discription, strattime) {
-        var _this = this;
-        _super.prototype.display.call(_this);
-        _this.id = id,
-            _this.name = name,
-            _this.discription = discription,
-            _this.strattime = strattime,
-        ;
-        return _this;
+    function event1() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    event1.prototype.display = function () {
-        console.log("ID:".concat(this.id, "   NAME:").concat(this.name, "  DISCRIPTION:").concat(this.discription, "  STARTTIME:").concat(this.strattime));
-    };
     return event1;
 }(Organizer));
+_super.display.call(this);
+this.id = id,
+    this.name = name,
+    this.discription = discription,
+    this.strattime = strattime,
+    display();
+{
+    console.log("ID:".concat(this.id, "   NAME:").concat(this.name, "  DISCRIPTION:").concat(this.discription, "  STARTTIME:").concat(this.strattime));
+}
 var Venue = /** @class */ (function (_super) {
     __extends(Venue, _super);
-    function Venue(id, name, discription, address) {
-        var _this = this;
-        _super.prototype.display.call(_this);
-        _this.id = id,
-            _this.name = name,
-            _this.discription = discription,
-            _this.address = address,
-        ;
-        return _this;
+    function Venue() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
-    Venue.prototype.display = function () {
-        console.log("ID:".concat(this.id, "   NAME:").concat(this.name, "  DISCRIPTION:").concat(this.discription, "  ADDRESS:").concat(this.address));
-    };
     return Venue;
 }(Organizer));
-var Organizer = new Array(new event1(12, "Raj Kundra", "Namimg Ceremony", 8.30), new Venue(14, "Shilpa Kundra", "Namimg Ceremony", "pune"));
-for (var _i = 0, Organizer_1 = Organizer; _i < Organizer_1.length; _i++) {
-    var item = Organizer_1[_i];
-    item.display();
+_super.display.call(this);
+this.id = id,
+    this.name = name,
+    this.discription = discription;
+this.address = address,
+    display();
+{
+    console.log("ID:".concat(this.id, "   NAME:").concat(this.name, "  DISCRIPTION:").concat(this.discription, "  ADDRESS:").concat(this.address));
 }
+// let Organizer: Organizer[] = new Array(new event1(12, "Raj Kundra", "Namimg Ceremony", 8.30), new Venue(14, "Shilpa Kundra", "Namimg Ceremony", "pune"));
+// for (const item of Organizer) {
+//     item.display();
+// }
